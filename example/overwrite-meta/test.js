@@ -12,7 +12,9 @@ JX.behavior('test', function() {
     'click',
     'request',
     function (e) {
-      new JX.Request('more_meta.php', JX.bag).send();
+      new JX.Request('more_meta.php', function(response) {
+        JX.DOM.appendContent(JX.$('cont'), JX.HTML(response.tag));
+      }).send();
     });
 
 });

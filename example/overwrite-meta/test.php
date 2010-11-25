@@ -37,6 +37,7 @@
 
 ?>
   </p>
+  <div id="cont"></div>
   </body>
   <script src="../../pkg/javelin.dev.js" type="text/javascript"></script>
   <script src="test.js" type="text/javascript"></script>
